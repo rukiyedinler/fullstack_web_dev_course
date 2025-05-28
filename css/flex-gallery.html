@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            font-family: "Open Sans", sans-serif;
+            font-size: 3rem;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery div{
+            flex-grow: 1;
+            margin:3px;
+            overflow: hidden;
+            /* taşmayı engellemiş oluyourm hover olduğunda da div içinden taşmasın image diye */
+        }
+        img:hover{
+            transform: scale(1.2);
+            /* hover olduğunda 1.2 %20 oranında resmi büyütür. */
+            transition: transform .3s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+        <div>
+            <img src="https://www.oggusto.com/_next/image?url=https%3A%2F%2Fwp.oggusto.com%2Fwp-content%2Fuploads%2F2022%2F09%2Fdeniz-feneri-otel.webp&w=1920&q=75" alt="">
+        </div>
+        <div>
+            <img src="https://randomwordgenerator.com/img/picture-generator/55e3d3464a57b10ff3d8992cc12c30771037dbf85254794e7d2b7ed79545_640.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://randomwordgenerator.com/img/picture-generator/53e5d7464a50a914f1dc8460962e33791c3ad6e04e5074407c2e7bd09045c3_640.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://randomwordgenerator.com/img/picture-generator/54e2d5474350af14f1dc8460962e33791c3ad6e04e50744077297bd5914bc6_640.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://randomwordgenerator.com/img/picture-generator/52e0d34a4f55b10ff3d8992cc12c30771037dbf85254794e73287adc914e_640.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://randomwordgenerator.com/img/picture-generator/54e4dc474b50a814f1dc8460962e33791c3ad6e04e5077497c2a7cd4944ecc_640.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://randomwordgenerator.com/img/picture-generator/53e1d6444b56ab14f1dc8460962e33791c3ad6e04e5074417c2f7cd39644c6_640.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://randomwordgenerator.com/img/picture-generator/57e4d2424954ad14f1dc8460962e33791c3ad6e04e50744172287ed3934dc1_640.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

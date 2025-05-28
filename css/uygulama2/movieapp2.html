@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0
+        }
+        .main-header{
+            background-color: darksalmon;
+            padding: 8px 16px;
+        }
+        .main-header-nav{
+            display: inline-block;
+            width: calc(100% -  99px);
+            text-align: right;
+        }
+        .main-header-nav__item{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .main-header-nav__items{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .section-show{
+            background: url('kapadokya13.png');
+            /* center left ya da bottom left kullanabilkirsin */    
+            background-position: center;
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+        }
+        .section-none{
+            background-color: darksalmon;
+            height:74px;
+            padding: 10px;
+        }
+        .movie-app{
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+        .main-header-nav__item a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .main-header-nav__item a:hover, .main-nav__item:hover::before {
+            color: #2E4C6D;
+        } 
+        .main-header-nav__item:active::before, .main-nav__item a:active {
+            color: #fff;
+        }
+        .main-header-nav__item::before {
+            content: '\2022';
+            color: #fff;
+        }
+        .main-header-nav__item__login a{
+            color: #fff;
+            background-color: darkgray;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            padding: 4px 5px;
+        }
+        .main-header-nav__item__login::before{
+            content: none;
+        }
+        .main-header-nav__item__login a:hover{
+            color: darkgray;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="movie-app">MovieApp</a>
+        <nav class="main-header-nav">
+            <ul class="main-header-nav__items">
+                <li class="main-header-nav__item">
+                    <a href="#">Movie</a>
+                </li>
+                <li class="main-header-nav__item">
+                    <a href="#">About</a>
+                </li>
+                <li class="main-header-nav__item main-header-nav__item__login">
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-show">
+            <h1>Welcome to movie app!</h1>
+        </section>
+        <section class="section-none">
+            <h1> </h1>
+        </section>
+    </main>
+</body>
+</html>

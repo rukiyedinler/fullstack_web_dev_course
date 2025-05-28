@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(188, 143, 143);
+            padding: 0 20px;
+
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav a{
+            align-self: center;
+            /* dikeyde elemanı tek başına ortaya konumlandırır. */
+            color: aliceblue;
+            font-size: 17px;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .navigation{
+            list-style: none;
+            display: flex;
+        }
+        .navigation a{
+            padding: 16px;
+            display: block;
+
+        }
+        .navigation a:hover{
+           background-color: rgb(214, 166, 166);
+        }
+        .navigation li:last-child{
+            display: none;
+        }
+
+        @media (max-width: 600px){
+            nav{
+                flex-direction: column;
+                position: relative;
+                /* 600 px alrına inildiğinde alt alta gelecekler. */
+            }
+            nav a{
+                align-self: flex-start;
+            }
+            .navigation{
+                flex-direction: column;
+            }
+            .navigation a{
+                text-align: center;
+                padding: 10px;
+                border-top: 1px solid rgb(214, 166, 166);
+            }
+            .navigation li:last-child{
+                display: block;
+                position: absolute;
+                top:0;
+                right: 10px;
+            }
+
+            .responsive .navigation li:not(:last-child){
+                /* last child son elemnı oluyor. Son eleman yani ikonun haricindeki her şey kapanacak.*/
+                display: none;
+            }
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <nav class="responsive">
+        <a href="">Logo</a>
+        <ul class="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="#">
+                <i class="fa fa-bars"></i>
+            </a></li>
+        </ul>
+    </nav>
+</body>
+</html>

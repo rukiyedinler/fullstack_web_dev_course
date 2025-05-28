@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{margin: 0;}
+
+        #show-case{
+            background-color: #2E4C6D;
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+        }
+        #how-it-works{
+            background-color: coral;
+            padding: 10px;
+        }
+        .main-header{
+            background-color: coral;
+        }
+        .main-nav{
+            /* böylelikle header ile a etiketini aynı satıra almış olduk */
+            display: inline-block;
+            width: 88%;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <a href="">MovieApp</a>
+        <nav class="main-nav">
+            <a href="#">Movie</a>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+<!-- h1 içerisinde text align center diyerek içeriği ktunun ortasına hizalayabilirsin ancak nav etiketi zaten içerik kadar alan kapladığı için kutu içerik kadardır ve sağa sola oynama yapılmaz. Navi block eleman gibi davran dersem yani inline block oalarak seçersem ve width özelliği verirsem etrafını kaplayan width kadar bir kutu oluşturur. Bu şekilde ekrandaki içeriği sağa ortaya hizalayabilirsin burada margin kullanman fonkssiyonellik sağlaamaz çünkü tarayıcı boyutunu değişitrdiğinde değişiklik sağlaamz. 100 verirsen widthi block eleman olarak davradnığından bi alt satıra iner ama 85 gibi değerler verirsen movieapp ile aynı satırın sağına yaslanır. Ancak elle manueal bir değer verdiğin için tarayıcı boyutunu değiştirdiğimde daralttığımda aşağı iner çünkü %100 lük alan kaplanmaya başlanır. 
+width: calc(100% - 80px) burada %100 ünden movieapp in kapladığı alanı çıkartıyorsun böylelikle kapladığı alan hep aynı kalmış oluyor.
+-->
+<main>
+    <section id="show-case">
+        <h1>Welcome to page</h1>
+    </section>
+    <section id="how-it-works">
+        <h2>How it works?</h2>
+    </section>
+</main>
+   
+</body>
+</html>

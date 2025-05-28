@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color: bisque;
+        }
+        
+        #page-title{
+            color: blue;
+        }
+
+        #page-subtitle{
+            color: brown;
+        }
+
+        .fontsize{
+            font-size: 18px;
+        }
+
+        .lorem-class{
+            background-color: burlywood;
+            color: chocolate;
+        }
+        /* boşluk bırakma demiş oluyorsun yıldız sayfadaki tüm etiketleri etkiler. Özel olrak bir etikete farklı margin verirsen de onu alır */
+        *{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- class sayesinde bir ya da bşrden fazla özelliği birden fazla etikete verebilirsin. Hangi etiketkelrde bu classı verirsen onlar için geçerli olur.
+    .blog.post{
+        color : "red"
+    }
+    <h1 class="blog.post">
+
+    id ile de verebilmek mümkün. İd değeri tüm sayfada kullanılan etiketler için eşsiz olmalı.
+    #blog.post{
+        color : "red"
+    }
+    <h1 id="blog-title">
+    -->
+
+    <!-- id eşsix olacağı için çoklamada id yerine class kullan -->
+    <section>
+        <h1 id="page-title">Welcome</h1>
+        <h2 id="page-subtitle">Welcome To MoiveApp</h2>
+
+        <!-- birden fazla class da verilebirli -->
+        <p class="lorem-class font-size">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, explicabo!</p>
+        <h3 class="lorem-class">Lorem ipsum dolor sit amet.</h3>
+    </section>
+</body>
+</html>

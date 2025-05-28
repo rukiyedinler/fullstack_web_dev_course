@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box ;
+        }
+        body{margin:0}
+        .box{
+            padding: 10px;
+            border:5px solid dimgray;
+            margin-bottom: 10px;
+        }
+        .navbar{
+            background-color: darkmagenta;
+        }
+        .content{
+            background-color: darkkhaki;
+            /* absolute inline block gibi içerik kadar yer kaplatır widthi 100% yaparak eski boyutuna döndürebilirim tabii */
+            position: absolute;
+            width: 100%;
+        }
+        .footer{
+            background-color: darkslategray;
+            position: relative;
+        }
+
+        .container{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- poistion için 5 değer var : sstatic relative fixed absolute sticky -->
+    <!-- akıştan kastımız 3 adet divin bir nbody içerisinde olduğunu düşünelim -->
+    <!-- static: normal akış içerisinde bulunan pozisyon -->
+    <!-- relative: normal akışı bozmadan o anki konumu neyse ona ek olarak 4 köşeden konumlandırabiliyorum top left right dşyerek ne kadar kaydırmak istiyorsam onu veriyoruz -->
+    <!-- absolute: akışı bozarak en başa alır ve oradan itibaren left right öxelliği vermeni sağlar -->
+
+    <!-- body içinde container sınıfı içinde bir body tanımladığımızı düşünelim container a bir position değeri vermediğimde dive absolute position değerini verir ve sağ sol değerlerini gireresem kednini body etiketine göre hizalar ancak ben container a position olrak relative verirsem div etiketi kendini container a göre hizalar var container ı nereye hareket ettirirsem div de onunla gider-->
+
+    <div id="container">
+        <div class="box navbar">Navbar</div>
+        <div class="box content">Content</div>
+        <div class="box footer">Footer</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Resmi internet ortamında açıklayacak ismi de alt a veririz. Resim bulunamaz ise görüntülenemediğinde alt etiketinde yazdığın şey görünür. Arama için de önemlidir.-->
+
+    <!-- Sadece width değeri verirsen orantılı olarak büyültüp küçültür. Ancak height de eklersen resmin orijinalliğini bozmuş olursun. -->
+    <!-- png ye göre jpeg formatındaki bir resim  daha az yer kaplar. Her eklediğin resim server tarafından indirilirek ekrana yansıtılır. Bu yüzden çok büyük dosyalar kullanmamak lazım.-->
+    <!-- ../image bu bir üst dizindeki image i al demek. ..//images/image Bu da bir üst dizindeki images in altındaki image demek -->
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="screenshot" width="200">
+    <!-- target da nerede açacağını verirsin. Defalut olarak self gelir sayfada açar. Blank de yeni sekmede açar. -->
+    <!-- Title da açıklamayı verirsin mouse üzerinde iken de bu bilgi görünür. SEO açısından da title önemli. -->
+    <a href="index.html" title="resimleri görüntüle" target="_blank">Musteri Adi</a>
+    <a href="images/ss.png">Resmi aç</a>
+    <!-- <a href="images.zip">Resmi indir</a> Burada zip dosyasını tarayıcı açamayacağı için indirir.-->  
+
+    <br>
+    <!-- resmi url gibi de açtırabilirsin. -->
+    <a href="images/ss.png" target="_blank">
+        Resmi yeni sayfada aç
+        <img src="images/ss.png" alt="screenshot" width="200">
+    </a>
+
+    <br>
+    <!-- mail uygulaması açılır ve mail göndermeni sağlar. -->
+    <a href="mailto:info@gmail.com">Mail gönder</a>
+
+    <br><br><br>
+
+    <!-- Bu şekilde kullandığında id verdiğin yere scrollu götürür. O başlığa gider yani. -->
+    <a href="#bolum1">Bolum 1</a>
+    <a href="#bolum2">Bolum 2</a>
+
+    <h2 id="bolum1">Deneme Bolum 1 </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta ut, eius dolor cum, atque voluptatum, reprehenderit labore ratione doloribus itaque beatae. Nostrum blanditiis cumque possimus excepturi ipsam vitae laudantium.</p>
+<br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta ut, eius dolor cum, atque voluptatum, reprehenderit labore ratione doloribus itaque beatae. Nostrum blanditiis cumque possimus excepturi ipsam vitae laudantium.</p>
+<br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta ut, eius dolor cum, atque voluptatum, reprehenderit labore ratione doloribus itaque beatae. Nostrum blanditiis cumque possimus excepturi ipsam vitae laudantium.</p>
+<br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta ut, eius dolor cum, atque voluptatum, reprehenderit labore ratione doloribus itaque beatae. Nostrum blanditiis cumque possimus excepturi ipsam vitae laudantium.</p>
+    
+
+    <h2 id="bolum2">Deneme Bolum 2 </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odio temporibus quae assumenda, voluptatem ab quam modi voluptates magni molestiae harum nemo repellat corrupti libero impedit. Sint expedita facilis ad?</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odio temporibus quae assumenda, voluptatem ab quam modi voluptates magni molestiae harum nemo repellat corrupti libero impedit. Sint expedita facilis ad?</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odio temporibus quae assumenda, voluptatem ab quam modi voluptates magni molestiae harum nemo repellat corrupti libero impedit. Sint expedita facilis ad?</p>
+
+
+    <!-- Sırasız bir liste oluşturur. Nokta ekler başlarına.Styleda type ı vererek de başa eklenecek işareti değiştirebilirsin. none hiçbir şey koymaz, circle içi boş bir yuvarlak ekler -->
+        <ul style="list-style-type: none;">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3
+                <ul>
+                    <li>item 3.1</li>
+                    <li>item 3.2</li>
+                    <li>item 3.3</li>
+                </ul>
+            </li>
+        </ul>
+
+            <!-- Sıralı bir liste oluşturur. Sıra ile 1.item1 şeklinde yazdırır. Burada da type da a vererek alfabe ile sıralamasını isteyebilirsin. Ya da I vererek roma rakamları ile ilerlemesini de isteyebilirsin. Start ile kaçtan başlamasını istediğini de söyleyebilirsin.-->
+            <ol type="1" start="10">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ol>
+
+            <!-- Description list. Dt veriyi verir. Dd de açıklamasını verir. -->
+            <dl>
+                <dt>Html</dt>
+                <dd>Html nedir?</dd>
+                <dt>Css</dt>
+                <dd>Css nedir?</dd>
+                <dd>Css nasıl kullanılır?</dd>
+            </dl>
+</body>
+</html>

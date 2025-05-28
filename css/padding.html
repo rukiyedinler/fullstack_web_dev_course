@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #show-case{
+            background-color: #2E4C6D;
+            /* padding yazı ile çizdiğin kenarlar arasındaki boşluğu ifade eder. */
+            padding: 35px;
+        }
+        h1{
+            /* böylelikle section içerisindeki h1 için de ayrım yaptırdık. */
+            background-color: cadetblue;
+            padding: 15px;
+        }
+        *{
+            margin:0;
+        }
+        #how-it-works{
+            background-color: coral
+        }
+        nav{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <!-- a etiketine top ve bottom vermeye çalışrsan etkisini göremezsin ancak nav etiketine vermeye çalışırsan onun etksini görürsün. -->
+    <a href="#">Movie</a>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+</nav>
+    <!-- padding de lefti 10 px verirsen backgorund aynı kalmasına rağmen  yazıyı sağa taşır. Ancak marginde sola verirsen arka planla beraber içeriği taşır çünkü padding içerik ile köşe arasındkai boşluktur. -->
+    <section id="show-case">
+        <h1>Welcome to page</h1>
+    </section>
+    <section id="how-it-works">
+        <h2>How it works?</h2>
+    </section>
+        
+</body>
+</html>

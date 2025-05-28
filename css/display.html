@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{height: 60px; width: 60px; display: inline;}
+        #first{background-color: coral;}
+        #second{background-color: darkcyan;}
+        #third{background-color: lightskyblue;}
+        a{
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- display: none | inline | inline-block | block -->
+<!-- default oalrak bir etiket eklediğinde zaten display block olarak gelir yani container ın genişliği kadar alan kapla demek. -->
+<!-- inline özelliğini verirsen içerik kadar yer kaplar -->
+<!-- inline block özelliğini verirsen inline da olduğu gibi yan yana olması özelliğini kullanır ancak içerik kadar yer kaplamaz da verdiğin width değeri kadar yer kaplar. Widthi kapatırsan da içerik kadar yer kaplar. İnline da  verdiğin width deperinin bir anlamı yoktu. -->
+<!-- block özelliği sayesinde de a gibi inline olan yan yana dizilen elemanalrı alt alta alarak veridğin width height değerlerini anlamlı hale getirirsin. -->
+<div id="container">
+    <div class="box" id="first">first</div>
+    <div class="box" id="second">second</div>
+    <div class="box" id="third">third</div>
+</div>
+
+<div>
+    <a href="">Home</a>
+    <a href="">Movies</a>
+    <a href="">Contact</a>
+    <!-- a inline bir eleman olduğu için buna width height veremezsin direkt içindeki metin kadar yer kaplar. -->
+</div>
+
+<!-- divler normalde block elemanlardır. a ise inline elemandır. -->
+</body>
+</html>

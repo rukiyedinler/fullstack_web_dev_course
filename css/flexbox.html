@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            /* inline block gibi içerik kadar yer kağlayıp yan yana ekliyor. */
+            /* flex-direction: column;  */
+            /* direction ile block eleman gibi davrandı ve tğm satırı kaplayarak item ları alt alta sıraladı */
+            flex-direction: row-reverse;
+            /* reverse de tersten sıralar */
+            flex-wrap: wrap;
+            /* wrap de ekrana sığmadığı durumlarda gösterip aşağıya mı almak istersin yoksa göstermeyeyim mi gibi bir şeydir. no wrap default özelliğidir ve ekrana sığmadığında sığdığı kadarını gösterir. Wrap ise sığmadığında alta alır. */
+            /* flex-flow: row wrap; direction ile wrap özelliğini beraber verebielceğin bir attribute */
+            justify-content: center;
+            /* yatayda ortaya hizalar flex-start da en başa hizalar. flex-end de en sonuna hizalar. */
+            /* aralarındaki boşlukları değşitrmek için de space around kullanırsın. Yanlardan x boşluk bırakırsa aralarında 2x boşluk bırakarak tüm satıra sığdırır. space-between dersek sağ soldan boşluk bırakmadan direkt aralarındaki boşlukları eşitler. space-evenly de başlardaki ve aralarındaki tüm boşluklara aynı değeri verir. */
+
+            /* align-items: stretch flex-start flex-end center gibi özelliklerle de itemları beraebr olarak container içinde bir yere konumlandırırsçın. */
+
+            /* flex-direction u column a çekersen justify dikey align ise yatay olur. */
+            background-color: rgb(177, 135, 80);
+            padding: 15px;
+        }
+        .item{
+            background-color: rgb(143, 116, 80);
+            padding: 30px;
+            margin:20px;
+            color: white;
+            font-size: 20px;
+
+            /* itemlardan herhangi biriirne flex-grow: 1 özelliğini verirsen hepsi içerik kadar yer laplar ve kalan tüm alanı bu item a verir. 0 dan farklı bir değer yazman yeterli. Ama birden fazla item a vereceksen oran şçeklinde vermen lazım. Mesela birine 1 birine 4 verirsen kalan alanı 4/1 olark paylaşırlar. */
+
+            /* flex-basis ilk başta item a ne kadr deper verileceğidir.flex-shrink e 0 verirsen ekran daralsa da 200 px in altına inmez. */
+
+            /* bunları tek değerde verenbilyorsun flex:grow shrink basis 0 1 200px olarak verebilrisn. */
+        }
+    </style>
+</head>
+<body>
+    <!-- Flex container flex itemleri içinde barındıran bir kutudur.display:flex özelliğini vermen yeterli. Flex container içinde itemleri istediğin şekilde konumlandırırısın.  -->
+
+    <!-- Flex container özelliğine neler verebiliriz?
+    flex default olarak yan yana sıralar itemlerı. Bunları alt alta sısralamak için flex-direction ile yaparız. 
+    flex-wrap ile containerın genişliği ile orantılı olarak itemların da değişmesini isteyebiliriz.
+    justify-content de tüm itemleri yan yana sırala ortala ya da sağa yasla gibi özellikleri içerir.
+    align-items ile de justify ın dikey halini yapmış oluruz
+    align-content itemlar arası mesafe ayarlanır-->
+
+    <!-- Flex itemlara hangi özellikleri verebiliriz?
+    align-self her itemın bağımsız olarak konumunu container içinde ayarlamka için,
+    order itemların sıralamsını ayarlar
+    flex-grow ile container genişlediğinde item ların kaç oranında artaacğını vs berlirleriz.
+    flex-shrink ile container daraldığında item ların kaç oranda daralacağını belirler.
+    flex-basis her item a başlangıçta verilen genişlik 
+    son üçü için direkt flex:1 0 auto diyebiliriz grow shrink ve basis i vermiş oluyoruz
+ -->
+
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+    </div>
+</body>
+</html>

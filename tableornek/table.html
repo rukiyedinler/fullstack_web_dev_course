@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Yazılım Kursları</h1>
+    <!-- padding köşeler arasındaki mesafeyi ayarlarken spacing hücreler arasındaki mesafeyi ayarlar -->
+    <table border="1" width="100%" cellpadding="10" cellspacing="5">
+      <thead>
+        <tr>
+          <th>Resim</th>
+          <th>Kurs Adı</th>
+          <th>Açıklama</th>
+          <th>Kategori</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <img src="web.jpg" alt="web-gelistirme" width="200" />
+          </td>
+          <td>Komple Uygulamalı Web Geliştirme</td>
+          <td>
+            Sıfırdan ileri seviyeye 'Web Geliştirme':
+            Html,Css,Sass,Flexbox,Grid,Bootstrap,Javascript,Angular,Firebase,Asp.Net
+            Core
+          </td>
+          <td rowspan="2">Web Geliştirme</td>
+          <td>
+            <!-- target da nerede açacağını verirsin. Defalut olarak self gelir sayfada açar. Blank de yeni sekmede açar.  Title da açıklamayı verirsin mouse üzerinde iken de bu bilgi görünür. -->
+            <a
+              href="https://www.udemy.com/course/komple-web-developer-kursu/"
+              title="Uygulamalı Web Geliştirme Kursu"
+              target="_blank"
+              >Komple Uygulamalı Web Geliştirme Kursu'nu İncele</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="php.png" alt="php" width="200" />
+          </td>
+          <td>Php ile Sıfırdan İleri Seviye Web Programlama</td>
+          <td>
+            Sıfırdan php dersleri ile dinamik php uygulamaları
+            geliştirebilirsin.
+          </td>
+
+          <td>
+            <a
+              href="https://www.udemy.com/course/php-dersleri/"
+              title="Php ile Sıfırdan İleri Seviye Web Programlama Kursu"
+              target="_blank"
+              >Php ile Sıfırdan İleri Seviye Web Programlama Kursu'nu İncele</a
+            >
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="python.jpg" alt="python" width="200" />
+          </td>
+          <td>Python ile Sıfırdan İleri Seviye Programlama</td>
+          <td>
+            Sıfırdan İleri Seviye Python Dersleri ile Python Programlama,
+            Veritabanı, Veri Analizi, Bot Yazımı, Web Geliştirme Öğren
+          </td>
+          <td>Programlama</td>
+          <td>
+            <a
+              href="https://www.udemy.com/course/python-dersleri/"
+              title="Python ile Sıfırdan İleri Seviye Programlama Kursu"
+              target="_blank"
+              >Python ile Sıfırdan İleri Seviye Programlama Kursu'nu İncele</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="buttons.css">
+    <!-- buraya linki veriyorsun a içerisinde bu css dosyaısnın içerisindeki herhangi bir classı tanımlıyorsun ve o özelliklere sahip butonlar gelmiş oluyor -->
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0
+        }
+        .main-header{
+            background-color: darksalmon;
+            padding: 8px 16px;
+        }
+        .main-header-nav{
+            display: inline-block;
+            width: calc(100% -  99px);
+            text-align: right;
+        }
+        .main-header-nav__item{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .main-header-nav__items{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .section-show{
+            background-color: darkseagreen;
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+        }
+        .section-none{
+            background-color: #fff;
+            padding: 10px;
+        }
+        .movie-app{
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+        .main-header-nav__item a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .main-header-nav__item a:hover, .main-nav__item:hover::before {
+            color: #2E4C6D;
+        } 
+        .main-header-nav__item:active::before, .main-nav__item a:active {
+            color: #fff;
+        }
+        .main-header-nav__item::before {
+            content: '\2022';
+            color: #fff;
+        }
+        .main-header-nav__item__login a{
+            color: #fff;
+            background-color: darkgray;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            padding: 4px 5px;
+        }
+        .main-header-nav__item__login a:hover{
+            color: darkgray;
+            background-color: #fff;
+        }
+        .section-none__div1{
+            text-align: center;
+        }
+        .section-none__div2{
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+        .section-none__div2__item{
+            display: inline-block;
+            margin: 0 10px;
+            width: 30%;
+        }
+        .section-none__div2__items{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .section-none__div2__items h1{
+            color: #2E4C6D;
+            font-size: 20px;
+        }
+        .section-features-nav{
+            display: inline-block;
+            width: 100%;
+            padding: 5px 8px;
+        }
+        .row div{
+            display: inline-block;
+            width: calc(50% - 2px);
+            height: 350px;
+        }
+        .features__left{
+            background: url('upmup.webp');
+            background-size: cover;
+            background-position: top center;
+        }
+        .features__right{
+            background-color: gray;
+            vertical-align: top;
+            padding: 40px;
+        }
+
+        #features a{
+            background-color: darksalmon;
+            color: white;
+            padding: 6px;
+            text-decoration: none;
+            border-radius: 8px;
+            border:1px solid white;
+            text-align: center;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        #features a:hover{
+            background-color: white;
+            color: darksalmon;
+            border:1px solid darksalmon;
+
+        }
+
+        .section-member-div{
+            background-color: lightslategray;
+            width: 29.7%;
+            padding: 5px;
+            float: left;
+            margin: 10px 10px 0 20px;
+            border: 1px solid lightslategray;
+            border-radius: 3px;
+            box-shadow: 5px 10px 15px 5px grey;
+            /* <!-- box shadow gölgelendirme yapar. Dikeyde v-offset yatayda h-offset dir dikeyde poz değer verirsen yukarıdan alağıya yatayda poz değer verirsen de soldan sağa gölgelendirme yapar 
+
+            box shadow: h-offset v-offset blur spread color
+            blur blunaıklık değerini ifade eder
+            spread gölgenin boyutunu ifade eder
+            --> */
+            transition: box-shadow .2s;
+            /* box shadow özelliğine bir saniye vermiş oluyoruz 2 sn kadar hover olduğunda box shadow özelliğini uygular */
+        }
+
+        .section-member-div:hover{
+            box-shadow: 5px 10px 15px 5px #2E4C6D;
+        }
+
+        .section-member{
+            text-align: center;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .section-member::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* .section-member a{
+            border: 1px solid #2E4C6D;
+            border-radius: 4px;
+            text-decoration: none;
+            background-color: cornflowerblue;
+            color: white;
+            padding: 4px;
+        }
+        .section-member a:hover{
+            background-color: white;
+            color: cornflowerblue;
+        } */
+        .badge{
+            background-color: cadetblue!important;
+            color: white;
+        }
+        .section-member-div__items{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="movie-app">MovieApp</a>
+        <nav class="main-header-nav">
+            <ul class="main-header-nav__items">
+                <li class="main-header-nav__item">
+                    <a href="#">Movie</a>
+                </li>
+                <li class="main-header-nav__item">
+                    <a href="#">About</a>
+                </li>
+                <li class="main-header-nav__item main-header-nav__item__login">
+                    <a href="#" >Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-show">
+            <h1>Welcome to movie app!</h1>
+        </section>
+        <section class="section-none">
+            <div class="section-none__div1">
+                <h1>How it works?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, et.</p>
+            </div>
+      <br><br><br>
+            <div class="section-none__div2">
+                <ul class="section-none__div2__items">
+                    <li class="section-none__div2__item">
+                        <span class="material-symbols-outlined">login</span>
+                        <h1>Register</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, itaque autem cum quis labore est?</p>
+                    </li>
+                    <li class="section-none__div2__item">
+                        <span class="material-symbols-outlined">login</span>
+                        <h1>Chpose a Plan</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, itaque autem cum quis labore est?</p>
+                    </li>
+                    <li class="section-none__div2__item">
+                        <span class="material-symbols-outlined">login</span>
+                        <h1>Enjoy Movify</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, itaque autem cum quis labore est?</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="row">
+                <div class="features__left"></div><div class="features__right">
+                    <h3>Watch all Movies & Tv Shows once they get realesed!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ab at reprehenderit sunt quas quia. Corrupti, doloremque aliquam explicabo, reiciendis labore rerum cupiditate, deleniti est quis repellendus magnam et? Adipisci!</p>
+                    <a href="#">View Features</a>
+                </div>
+            </div>
+        </section>
+
+        <h3 style="text-align: center;">Become a Premium Member</h3>
+        <section class="section-member">
+            <div class="section-member-div">
+                <h4>Free</h4>
+                <h5>0/month</h5>
+                <ul class="section-member-div__items">
+                    <li class="section-member-div__item">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li class="section-member-div__item">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li class="section-member-div__item">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li class="section-member-div__item">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li class="section-member-div__item">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li class="section-member-div__item">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Choose Plan</a>
+            </div>
+            <div class="section-member-div badge">
+                <h4>Recommended Basic</h4>
+                <h5>$9.99/month</h5>
+                <ul class="section-member-div__items">
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Choose Plan</a>
+            </div>
+            <div class="section-member-div">
+                <h4>Premium</h4>
+                <h5>$19.9/month</h5>
+                <ul class="section-member-div__items">
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Choose Plan</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

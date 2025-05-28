@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- bir html sayfasının içerisine başka bir html sayfasını yerleştirmek istediğimizde bir iframe yani bi çerçeve kullanabiliyoruz. -->
+    <!-- sığacağı şekilde boyutu ayarlarsan sayfadaki tüm içerikleri getrirebilir yoksa scrollbar ile getirir. -->
+    <!-- title da da ne formu olduğunu verebiliriz ekran okuycuları için -->
+    <!-- frameborder 0 olursa çerçevesiz gösterir 1 yaparsan çeröeveli -->
+    <iframe name ="myframe" src="forms.html" frameborder="0" 
+            width="400" height="400" title="ueylikformu"></iframe>
+
+    <p>
+        <a href="https://sadikturan.com" target="myframe">linke git</a>
+    </p>
+    <!-- Burada linke tıkladığında frame içiersinde o linki açar. -->
+
+    <!-- youtube dan bir video eklemek için paylaşa bastıktan sonra yerleştiri seçip oradaki iframe özelliğini alabilirsin ama her videoda olmaz kullanıcnın izin vermiş olması lazım-->
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t_Kd_G7p6ZQ?si=4aD5oAfZCd9AImGG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

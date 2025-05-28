@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- padding köşeler arasındaki mesafeyi ayarlarken spacing hücreler arasındaki mesafeyi ayarlar -->
+    <table border="1" width="100%" cellpadding="10" cellspacing="10">
+      <!-- thead başlık kısmı tbody içinde de satır ve sütunlar eklenir -->
+      <thead>
+        <!-- Başlık için satırda yer alan sütunlara verilecek isimleri burada veriyoruz -->
+        <tr>
+           <th>id</th>
+           <th>isim</th>
+           <th>fiyat</th>
+           <th>resim</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table Row tr ile bir satır eklemiş oluyoruz -->
+        <tr>
+          <!-- td*4 diyerek bir satırda 4 sütun olacağını belirtiyorum -->
+          <td>1</td>
+          <td>Iphone 11</td>
+          <td>7000</td>
+          <td>1.jepg</td>
+        </tr>
+        <tr>
+          <!-- td*4 diyerek bir satırda 4 sütun olacağını belirtiyorum -->
+          <td>2</td>
+          <td>Iphone 12</td>
+          <td>9000</td>
+          <td>2.jepg</td>
+        </tr>
+        <tr>
+          <!-- td*4 diyerek bir satırda 4 sütun olacağını belirtiyorum -->
+          <td>3</td>
+          <td>Iphone 13</td>
+          <!-- Burada iki kolonun yaptığı işi tekte yap demiş oluyorum birleştiriyor.  Satır için de rowspan-->
+          <td colspan="2">12000 -3.jpeg</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

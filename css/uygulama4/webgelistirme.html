@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            background-color: darkseagreen;
+            color: darkolivegreen;
+        }
+        h2{
+            margin: 0;
+        }
+        main a{
+            text-decoration: none;
+            padding: 8px;
+            display: block;
+            background-color: plum;
+            margin-bottom: 3px;
+            border-radius: 9px;
+        }
+        .clearfix3::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .content{
+            margin-top: 0;
+            width: 60%;
+            margin-left: 10px;
+        }
+        .menu{
+            width: 30%;
+        }
+        .col{
+            float: left;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Geliştirme</h1>
+    </header>
+
+    <main class="clearfix3">
+        <div class="menu col">
+            <a href="#">Html</a>
+            <a href="#">Css</a>
+            <a href="#">Js</a>
+        </div>
+
+        <div class="content col">
+            <h2>Komple Web Geliştirme Eğitimi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nobis? Quod laudantium consequuntur obcaecati praesentium mollitia veritatis dignissimos aperiam recusandae est natus animi asperiores magni consectetur ratione perspiciatis eum omnis, alias unde neque quam quo rem dolorum! Esse asperiores accusamus vel, velit odio libero commodi. Nobis exercitationem nulla quo dolor.</p>
+        </div>
+        
+        
+    </main>
+
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+
+</body>
+</html>

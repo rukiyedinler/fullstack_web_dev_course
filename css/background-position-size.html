@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            margin: 0;
+        }
+
+        #header {
+            position: relative;
+            background-image: 
+                /* linear-gradient(to bottom right,rgba(230,255,230,0.6),rgba(102,255,102,0.6)),  */
+                url("pexels-eberhardgross-1421903.jpg");
+            height: 100vh;
+            /* burada 100 px sağa 100 px aşağıya hizalamış olduk.Buna bottom ya da right diyerek tarayıcı boyutu değişse  bile resmin altının öncelikle gösterilmesini sağlarız. 10% 50% vereerk orta solu da gösterebilirsin */
+            background-position: 100px 100px;
+            /* Background repeat resimin boyutunn yetmediği yerde tekrarlamasını sağlar. Tekrarlamaması için no repeat verdik. */
+            background-repeat: no-repeat;
+            /*Çerçeveye tam olarak yerleştirir*/
+            background-size: cover;
+        }
+
+        #header h1 {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 80px;
+            color: red;
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="header">
+        <h1>Background Text</h1>
+        <img class="logo" src="yapraklogo.png!w700wp" alt="">
+    </div>
+
+</body>
+</html>

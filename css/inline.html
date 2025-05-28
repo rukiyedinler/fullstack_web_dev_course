@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color: antiquewhite;
+            color: brown;
+            text-align: center;
+        }
+        h2{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- inline css: Bu direkt olarak etiketin içinde style diyerek özellikleri belirlemektir. Aynı etiketi birden fazla kex kullanacaksan ve özellikleri de aynıysa bu sadece kod kalabalığına neden olur. -->
+    <main>
+        <!-- color palet olarak aratırsan renk kodlarını bulursun -->
+        <section style="background-color: antiquewhite; color: brown;">
+            <h1>Welcome To MoiveApp</h1>
+        </section>
+        <section style="background-color: antiquewhite; color: brown;">
+            <h1>Welcome To MoiveApp</h1>
+        </section>
+    </main>
+
+     <!-- internal css: Yukarıda head içerisinde style içerisinde hangi etikete hangi özelliği eklemek istiyorsan eklersin. Sayfadaki tüm section içerisindeki maddeler için o özellikler verilmiş olur. Varsayalım ki bir tanesinin fakrlı olmasını isatiyorsun. Onu da yukarıda farklı özelliği ile tnaımlayarak ayrıştırabilirsin. Ancak burada da sorun sayfa içerisinde hepsinin tanımlanması gerekmesi. Birçok sayfada aynı özellikler kullanılsa bile hepsinde style tanımını yapman gerekir. -->
+     <main>
+        <!-- color palet olarak aratırsan renk kodlarını bulursun -->
+        <section>
+            <h1>Welcome To MovieApp</h1>
+            <h2>Welcome To MoiveApp</h2>
+        </section>
+    </main>
+
+</body>
+</html>

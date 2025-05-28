@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+        }
+        h1{
+            color: green;
+        }
+        #page-title{
+            color: crimson;
+        }
+        .page-title{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <section>
+         <!-- iki tane h1 tanımlarsan h1 yeşil olur çünkü en son ekleneni baz alır hangisi kod satırında daha son eklendiyse o diğerini ezer. -->
+         <!-- h1 tanımı ve id etiketini karşılaştıracak olursak da etiketin yeri önemli olmaksızın etiketteki özellik baz alınır. İd classı da ezer. Sırlama inline -id - class - etiket -tarayıcı varsayılanı şeklindedir. İnline bir css yazarsan hepsini ezer.-->
+        <h1 id="page-title">Welcome</h1>
+
+        <!-- h1 yeşil olur çünkü en son ekleneni baz alır hangisi kod satırında daha son eklendiyse o diğerini ezer. -->
+        <p class="lorem-class">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, explicabo!</p>
+        <h3 class="lorem-class">Lorem ipsum dolor sit amet.</h3>
+    </section>
+</body>
+</html>

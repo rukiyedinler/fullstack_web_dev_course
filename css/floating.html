@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: burlywood;
+        }
+        .box2{
+            /* inline block özelliği kazandırmış oluruz hizalama da yapabiliriz block elemana */
+            float: right;
+            width: 150px;
+            height: 150px;
+            background-color: bisque;
+        }
+        .box1{
+            float: left;
+            width: 150px;
+            height: 150px;
+            background-color: bisque;
+        }
+        .clearfix::after{
+            /* bu şekilde de floatı temizleyebilrisn. Contenti boş olsun her ikisni de temizlesin demiş oluorsun ve display ile de block bir eleman olduğununn bilgisini veriyorsun */
+            content: "";
+            clear: both;
+            display: block;
+        }
+        img{
+            width: 300px;
+            float: right;
+            margin-right: 15px;
+        }
+        #section1{
+            background-color: bisque;
+            border: 2px solid lightsalmon;
+        }
+        .clearfix2::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- block elemanlar satırda container kadar yani sayfa genişliği kadar yer kaplar genişlik ve yükseklik vererek boyutunu ayarlayıp alt alta elemanlar elde edebiliriz. -->
+    <!-- inline elemanlar satırda içerik kadar kaplar yani içindeki yazı ne kadar uzunsa o kadar yer kaplar yani ve yan yana gelirler. a etiketlerinde ve spanlarda olduğu gibi.İnline elemanlara genişlik yükseklik verilmez -->
+    <!-- inline block elemanlar yan yana getirebiliriz width ve height verirsen görünür yoksa görünmez -->
+    <!-- bir blok eleman içerisinde inline ya da inline block elemanları text align özelliği ile sağa sola ortaya hizalayabiliyorum -->
+    <!-- blok elemanlarda text align özelliğini kullanamayız. Burada floating kullanabilirz. 3 tane alt alta block elamanımız var ve genişlik yüksekliğimni verdik.Blok elamnalrın hepsine floating uygularsam bunlar inline block öxelliği görür left right center diyerek bunları da hizalyabilirm -->
+
+    <!-- floatı kullandıktan sonra onu temizlememiz gerekiyor ki normla akış devam etsin. Mesela div içinde biri floatta sağa biri sola yaslıyken div altında bir paragradf verdiğined normalde altından devam eder ama floatı temizlemezsen araya sıkıştırır yapıyı bozar yani.-->
+
+    <div id="container" class="clearfix">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <!-- floatı temizliyoruz hem right hem left kullandığımız için both her ikisini de temizle demiş oluyoruz -->
+        <div style="clear: both;"></div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aut error optio quidem, excepturi, voluptatum repellendus corrupti maiores iure enim soluta officia? Nulla, inventore odio quaerat voluptatem mollitia labore earum!</p>
+
+    <section id="section1" >
+        <p class="clearfix2">
+            <img src="kapadokya12.png" alt="kapadokya">
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident reprehenderit sapiente quos unde numquam explicabo laboriosam adipisci sunt accusamus, similique blanditiis inventore nostrum sed, eum quo repudiandae! Facere, deserunt! Eaque.
+            </span>
+        </p>
+    </section>
+    
+</body>
+</html>

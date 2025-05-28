@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+        }
+        p{
+            border: 1px solid gray;
+        }
+        em{
+            border: inherit;
+            color: initial;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <!-- inheritance (kalıtım) p etiketi için bi özellik verirsen p içinde tanımladıkların ezmediğin sürece bunu miras alır -->
+    <!-- border interite edilemez o yüzden ona da eklemek istiyorsan inherit yazarsın bu da en yakın etiketi inherit alır.
+    border: initial dersen de başlangıç varsayılan değerini al demiş olursun  -->
+        <h1 id="page-title">Welcome</h1>
+        <p class="lorem-class">Lorem, ipsum dolor sit <em>amet consectetur</em> adipisicing elit. Dolores, explicabo!</p>
+        <h3 class="lorem-class">Lorem ipsum dolor sit amet.</h3>
+    </section>
+</body>
+</html>

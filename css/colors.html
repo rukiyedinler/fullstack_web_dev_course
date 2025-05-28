@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 20px;
+            border: 2px solid #888;
+            /* border: 2px solid rgb(128,128,128) de aynı şey */
+            margin-bottom: 10px;
+        }
+        #box1{
+            background-color: rgb(95, 14, 77);
+            opacity: 1;
+            transition: opacity .5s;
+            /* 1 direkt rengi gösterir 0 tamamen saydamlaştırır */
+        }
+        #box1:hover{
+            /* üzerine gelindiğinde  opaklık bilgisi de değiştirilebilir */
+            opacity: 0.8;
+        }
+        #box2{
+            background-color: rgb(70, 88, 5);
+            opacity: .5;
+            /* %50 oranında saydamlaştırır opacity opaklığı ayarlar. Ya da bu opacity değerini rgba(70,88,5,.5) olarak da verebilrsin */
+        }
+        #box3{
+            background-color: rgb(80, 17, 51);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- renkler nasıl belirlenir?
+    Renkler hexadeciamal rgb ve color olarak ifade edilebilir. Temel olarak renkler kırmızı mavi yeşilden oluşur. Kırmızı rgb(255,0,0) hex->#FF0000 
+    Yeşil rgb(0,255,0) hex->#00FF00
+    Mavi rgb(0,0,255) hex->#0000FF
+    Siyah rgb(0,0,0) hex->#000000
+    Beyaz rgb(255,255,255) hex->#FFFFFF (her bir iki karakter aynı ise onun yerine bir tane yazarak da ifade edilebilir yani #fff de beyazdır)
+    olarak ifade edilir #RGGGBB olarak ifade edilir aslında -->
+
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+</html>

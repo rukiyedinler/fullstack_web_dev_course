@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+
+        h4{
+            display: none;
+        }
+        /* min width vererek min 400 px ve üstünde arka planın rengini vermiş oluyoruz. */
+        /* bunların genel ölçekleri var */
+        /* landscape -> yatay mobil görüntü
+        portrait de mobil dikey görüntü*/
+        @media(max-width:575px){
+            /* başta none olarak verip kapattığım h1 i burada visibility sini açıuyorum */
+            #landscape h4{
+                display: block;
+            }
+            body{
+                background-color: cadetblue;
+            }
+        }
+        /* tablets */
+        /* burada tam aralık da verebilirsin max ve min vererek */
+        @media(min-width:768px) and (max-width: 991px){
+            #tablets h4{
+                display: block;
+            }
+            body{
+                background-color: darkgoldenrod;
+            }
+        }
+
+        /* laptop */
+        @media(min-width:992px){
+            #laptop h4{
+                display: block;
+            }
+            body{
+                background-color: darkgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="landscape"><h4>Landscape</h4></div>
+    <div id="tablets"><h4>Tablets</h4></div>
+    <div id="laptop"><h4>Desktop</h4></div>
+</body>
+</html>

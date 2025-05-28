@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            margin: 0;
+        }
+
+        #header {
+            position: relative;
+            background-image: 
+                url("pexels-eberhardgross-1421903.jpg");
+            height: 100vh;
+            background-position: center ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* koordinat biliglerini 4 köşe için de vererek nereden ne kadar kırpacağını vermiş oluyoruz. */
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+        }
+
+        #header h1 {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 80px;
+            color: red;
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <!-- kırpıp bir çerçeve içerisine yerleştirmeni sağlar. -->
+    <div id="header">
+        <h1>Background Text</h1>
+        <img class="logo" src="yapraklogo.png!w700wp" alt="">
+    </div>
+
+</body>
+</html>

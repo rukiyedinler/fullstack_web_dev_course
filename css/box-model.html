@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #show-case{
+            background-color: #2E4C6D;
+            /* 4 köşeden bir boşluk bırakmış oluruz sadece margini yazarsak*/
+            /* margin: 20px; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #how-it-works{
+            background-color: #FC997C;
+            /* margin: 20px; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            /* bunu tek bir satırda da yapabilirsin top-right-bottom-left sırasıyla 
+            margin: 20px 20px 10px 20px
+
+            sadece iki tane de verebilirsin bu da top ve bottomun 20, right ve lefti 10 yapar 
+            margin: 20px 10px 
+            
+            üç tane verirsen de top -sağsol- bottom sırasıyla olur
+            margin:20px 10px 20px*/
+
+            /* margin auto verirsen tüm ekranı kaplar biraz boşluk olmasını istiyosan sağdan soldan width verirsin */
+
+            /*  */
+        }
+        /* ikisinin de marginini 20px verdiğinde bottom ve top ikisinde de 20 olmasına rağmen aralarındaki mesafe 40 olmaz. Aynı oldukları için 20 alınır. Örneğin how it worksun topunu 25px yaparsan da aralarına 25 px lik bi boşluk ekler. Aynı şekilde üsttekinin bottomunu da fazla verirsen onu uygular. */
+    </style>
+</head>
+<body>
+    <!-- kenarlar border oluyor. Etiket ile kenarlar arasında bir alan oluşturmak için de padding kullanılır. Mesela incele ile açtığında   stylesta her bir alanın içeriğini görebiliyoruz. Burada box içerisinde margin border ve padding alanları var orada 944x74 yazısı width 944 height 74 demektir  -->
+
+    <!-- margin etrafındaki bolşuğu temsil eder -->
+    <section id="show-case">
+        <h1>Welcome to page</h1>
+    </section>
+    <section id="how-it-works">
+        <h2>How it works?</h2>
+    </section>
+        
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <!-- combinators -->
+    <!-- 4 adet combinator var. -->
+
+    <!-- 1-descendant selector -->
+    <p>1.paragraf</p>
+    <div>
+        <p>2.paragraf</p>
+        <section>
+            <p>3.paragraf</p>
+        </section>
+    </div>
+    <p>4.paragraf</p>
+    <p>5.paragraf</p>
+
+    <!-- 2-child selector -->
+
+    <!-- yukarıda section altındaki p yi de etkiledi child dersek alt etiketklerin içindekilere dokunmaz bu da 
+    div > p şeklinde style da tanımlanır. -->
+
+    <!-- 3-adjacent sibling selector -->
+
+    <!-- bu da yan yana olan etiketleri kasteder mesela divden sonra p gelmiş div + p diyerek tanıjmlarsak sadece divden sonra gelen p etiketine o özellikleri verir. -->
+
+    <!-- 4-general sibling selector -->
+
+    <!-- verilen etiketten sonraki her etiketi kasteder. div ~ p şeklinde tanımladığında divden sonra gelen her p etiketi için bu özellikleri verir. -->
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100%;
+        }
+        html{
+            height: 100%;
+        }
+        #header{
+            position: relative;
+            /* relative dersek h1 absolute olduğundan kapsayıcı elemana göre belirler genişliğini yüksekliğinşi dolaysıyla h1 headera bağlanır bodye değil */
+            background-color: chocolate;
+            background-image: url("pexels-eberhardgross-1421903.jpg");
+            background-position: center;
+            height: 100%;  
+            /* burada body  ye bir yükseklik vermek yerine height: 50vh dersen kullanıcnın gördüğü alanın yarısını al demek olur */
+            /* bir hegiht vereceksen bunu kapsayan yerlere de vermeliisn çünkü height width gibi değildir */
+        }
+        #header h1{
+            /* margin: 0; bunu yapmak yerine akış dışına çıkarırısam h1 resmi görmez ve direkt en üste konumlanır */
+            margin: 0;
+            position: absolute;
+            color: antiquewhite;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .cover{
+            /* farklı bi renkle diğer resmi saydamlaştırdık */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: cadetblue;
+            opacity: 0.4;
+        }
+        h2{
+            /* bu şekilde geçişli arka plan oluşturabilirsin */
+            /* background: linear-gradient(to right, #b300b3, #9900ff); */
+            /* buradaki gibi hepsini bir kerede de verebilirsin 0.7 saydamlığı verir ve image in altında bi renk belirlemiş olursun */
+            background-image: linear-gradient(to bottom right, rgba(230,255,230,0.5),rgba(102,255,102,0.5)),url("abstract-blue-purple-waves-on-260nw-2475222991.webp");
+            color: white;
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+        }
+        .logo{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Background Text</h1>
+
+        <img class="logo" src="yapraklogo.png!w700wp" alt="">
+        <div class="cover"></div>
+        <h2>DENEME</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .container {
+        padding: 20px;
+        height: 800px;
+        /* grid-template-columns: 150px 250px 400px 150px; */
+        /* bu şkeilde her bir sütuna sabip bir genişlik verebilirsin */
+        grid-template-columns: 150px 200px 150px auto;
+        /* auto ile geriuye kalan alanı vermiş oluyorusn. birden fazla alanı auto verirsen de paylaştırır */
+        /* 20% de verebilirsin. */
+        /* tüm kolonlara aynı şeyi vereckesen repeat(auyto) şeklinde verebilirsin */
+        /* 1fr 2fr şeklinde verirsen kalan alanı oaranlı şekilde dağıtır */
+
+        grid-template-rows: 100px;
+        /* rowlarda da ayrı ayrı yükseklik verebiliyorsun */
+
+        grid-auto-rows: 3fr;
+        /* sadece rowslarda 1fr 2fr verirsen ilk ve ikinciyi 1 2 oranında doldururu kalanını da auto olarak verir. */
+        display: grid;
+        background-color: burlywood;
+      }
+
+      .item {
+        background-color: chocolate;
+        padding: 20px;
+        margin: 20px;
+        color: #fff;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">item-1</div>
+      <div class="item">item-1</div>
+      <div class="item">item-1</div>
+      <div class="item">item-1</div>
+    </div>
+  </body>
+</html>

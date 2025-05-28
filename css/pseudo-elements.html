@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* sadece ilk satıra bu özellikleri uygular */
+        p::first-line{
+            font-weight: bold;
+            color: brown;
+            /* kelimelr arasındaki boşluk */
+            word-spacing: 2px;
+            /* harfler arasındaki boşluk */
+            letter-spacing: 1px;
+        }
+/* classı about olan p etiketini seçmiş oluyorsun arada boşluk olsaydı yani p .about olsaydı p nin altındaki about classına sahip olan bütün elemanlar demek. */
+        p.about::first-line{
+            color: blueviolet;
+        }
+        /* tüm p etiketinin ilk harfine özellikleri uygular */
+        p::first-letter{
+            font-size: 22px;
+        }
+/* herhangi bir etiket veremden ekranda sçeilen herhangi bir yazıya ait özellikler de verebiliriz */
+        ::selection{
+            background-color: cadetblue;
+        }
+        /* p etiketinin sonuna eklenecek özellikler */
+        p::after{
+            content: '\1F604';
+            font-size: 15px;
+            padding: 10px;
+        }
+</style>
+</head>
+<body>
+    <!-- herhangi bir emoji vs eklemek istersen html unicode yazarak onlara ait kod bilgilerine ulaşabailirsin. Ancak content içerisine dc karşılığı değil hc karşılığı yazılır. Content içerisine \ ekleyerek kodu yazılır. -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis laborum enim minima tenetur fuga fugit deserunt. Dicta, eos itaque!Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni laborum cum nulla impedit dignissimos alias quibusdam porro doloribus unde saepe corporis excepturi accusantium voluptatem hic magnam necessitatibus aspernatur architecto odit, exercitationem minus rem ipsa vero pariatur? Maxime, saepe atque!</p>
+
+    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni laborum cum nulla impedit dignissimos alias quibusdam porro doloribus unde saepe corporis excepturi accusantium voluptatem hic magnam necessitatibus aspernatur architecto odit, exercitationem minus rem ipsa vero pariatur? Maxime, saepe atque!</p>
+</body>
+</html>

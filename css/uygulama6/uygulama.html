@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .bg{
+            background-position: center;
+            background-size: cover;
+            /* fixed ile resmi sabitleyip scrollu aşağı indirdiğinde düzgün kaymasını sağladın. */
+            background-attachment: fixed;
+        }
+        .bg-image1{
+            height: 100vh;
+            background-image: url(background-tree.webp);
+        }
+        .bg-image2{
+            height: 50vh;
+            background-image: url(background-abant.webp);
+        }
+        .caption{
+            position: absolute;
+            left: 0;
+            top: 30%;
+            width: 100%;
+            text-align: center;
+        }
+        .caption .border{
+            background-color: cadetblue;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .box{
+            background-color: rgb(124, 88, 42);
+            color: white;
+            text-align: center;
+            padding: 50px 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg bg-image1">
+        <div class="caption">
+            <span class="border">Lorem, ipsum.</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, porro nemo eaque unde, sunt accusamus quis impedit repellat aspernatur vitae ex vero? Aperiam ab praesentium vitae eius illo suscipit ratione asperiores adipisci at blanditiis, consectetur sapiente rerum id consequatur deleniti voluptate perspiciatis facilis dolores rem deserunt necessitatibus nemo quasi tempora ipsum? Magnam praesentium, molestias quasi doloremque veniam expedita ipsum non nemo consequuntur facilis explicabo, nisi vel quia! Error temporibus tempore asperiores, ratione id provident quisquam repudiandae alias commodi illum vero quae blanditiis at unde, enim et. Nemo, minima cupiditate, odio aut numquam quasi repellat inventore mollitia tenetur laborum
+    </div>
+    <div class="bg bg-image2">
+        <div class="caption">
+            <span class="border">Lorem, ipsum.</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, porro nemo eaque unde, sunt accusamus quis impedit repellat aspernatur vitae ex vero? Aperiam ab praesentium vitae eius illo suscipit ratione asperiores adipisci at blanditiis, consectetur sapiente rerum id consequatur deleniti voluptate perspiciatis facilis dolores rem deserunt necessitatibus nemo quasi tempora ipsum? Magnam praesentium, molestias quasi doloremque veniam expedita ipsum non nemo consequuntur facilis explicabo, nisi vel quia! Error temporibus tempore asperiores, ratione id provident quisquam repudiandae alias commodi illum vero quae blanditiis at unde, enim et. Nemo, minima cupiditate, odio aut numquam quasi repellat inventore mollitia tenetur laborum
+    </div>
+</body>
+</html>

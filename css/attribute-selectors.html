@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* target özelliği verilen a etiketklerine bu özellik verilir. */
+        a[target]{
+            background-color: blueviolet;
+        }
+        a[class]{
+            background-color: aquamarine;
+        }
+        /* [class]{}  bu şekilde tüm sayfada class bilgisi verilmiş olanları da belirtebilrisin */
+        /* a[class= "about"] bu şekilde hangi class a ait oalnları vereceğini de belirtebilirsin */
+        /* [class *= "about"] burada da class ı about olan tğm etiketlere uygulanır. Sınıfın adı about-span olsa bile ona uygular çünkü class adlarında direkt onu arar */
+        /* [class ~= "about"] bu da sadece class ismi about olanları getirir about-span e uygulama yapmaz */
+        /* [class |= "about"] class bilgisi sadece ilkte olanları getirir tek class kabul eder class="span about" ise getirmez class about span ise de getirmez , about-span ise getirir*/
+        /* class ^= about about sınıfı ilkte yazılamk şartıyla birden fazla sınıf tanımına izin verir ve about-span de de çalışır */
+
+        /* class $= about burada da sonkdakini seçr */
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="" target="_blank">home</a>
+        <a href="" class="about">about</a>
+        <a href="">contact</a>
+    </nav>
+</body>
+</html>

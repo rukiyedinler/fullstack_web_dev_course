@@ -1,0 +1,17 @@
+h1{
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+div{
+    background-color:darkkhaki;
+}
+
+li{
+   /* üstünü çizer */
+   text-decoration: line-through;
+}
+ul{
+    list-style-type: none;
+}
